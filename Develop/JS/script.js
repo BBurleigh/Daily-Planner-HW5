@@ -4,6 +4,12 @@ $("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
 
 $( function() {
 
-    $("#selectable").selectable();
-    
+  $("#selectable").selectable();
+
 });
+
+//function createTable {
+
+ // var 
+
+//}
