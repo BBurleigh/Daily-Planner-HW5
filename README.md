@@ -20,5 +20,5 @@ Aside from my instructor and TA, my tutor aided me in adjusting and fixing the s
 None.
 
 ---
-permalink: /Develop/index.html
+permalink: Develop/index.html
 ---
