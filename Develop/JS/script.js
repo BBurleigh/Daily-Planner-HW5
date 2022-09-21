@@ -54,27 +54,27 @@ $(document).ready(function() {
 
   // console.log(hour) //to extract the number from id and compare it against current hour within a for loop; if statements(use this keyword to grab ids) add or remove classes; use of this keyword in for loop
 
-  for (var i = 7; i < 21; i++) {
+  $("tr").each(function() {
 
-    if (hour < timeId) {
+    var timeId = $(this).attr("id");
 
-      $("tr").addClass(".past");
+    if (hour > timeId) {
 
-      $("tr").removeClass(".present");
+      $(this).addClass("past");
 
-    } else if (hour = timeId) {
+      $(this).removeClass("present");
 
-      $("tr").addClass(".present");
+    } else if (hour == timeId) {
 
-      $("tr").removeClass(".future");
+      $(this).addClass("present");
 
-    } else if (hour > timeId) {
+      $(this).removeClass("future");
 
-      $("tr").addClass(".future");
+    } else if (hour < timeId) {
+
+      $(this).addClass("future");
 
     }
-
-  }
-  
+  })
 
 })
