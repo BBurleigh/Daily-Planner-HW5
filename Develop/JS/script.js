@@ -1,5 +1,7 @@
 var today = moment();
 
+$("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
+
 $(document).ready(function() {
 
   var saveButton = $(".saveBtn");
@@ -48,40 +50,3 @@ $(document).ready(function() {
   console.log(hour) //to extract the number from id and compare it against current hour within a for loop; if statements(use this keyword to grab ids) add or remove classes; use of this keyword in for loop
 
 })
-
-// const timeConverter = h => (h%12||12)+(h<12?'AM':'PM');
-
-// const storePlans = JSON.parse(localStorage.scheduler||'{}');
-
-// const template_schedule = h => <div class="scheduler">
-
-//   <div class="schedule-time">${timeConverter(h)}</div>
-
-//   <textarea class="schedule-desc" data-h="${h}">${storePlans[h]||''}</textarea>
-
-//   <div class="schedule-save">SAVE</div>
-
-//   </div>;
-
-//   for (let h=from; h <= today; h++) {
-
-//     EL_scheduler.insertAdjacentHTML('beforeend', template_schedule(h));
-
-//   }
-
-//   const save = ev => {
-
-//     const h = ev.target.getAttribute('data-h');// Get the hour
-      
-//     LS[h] = ev.target.value;       // Update Object
-                   
-//     localStorage.scheduler = JSON.stringify(LS); // Store into localStorage as string 
-//   };
-  
-//   EL_scheduler.querySelectorAll('.Schedule-desc').forEach(el => {
-
-//     el.addEventListener('blur', save);
-
-//   });
-
-$("#currentDay").text(today.format("dddd, MMMM Do, YYYY"));
