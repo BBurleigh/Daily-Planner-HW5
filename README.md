@@ -18,3 +18,7 @@ Aside from my instructor and TA, my tutor aided me in adjusting and fixing the s
 
 ## License
 None.
+
+---
+permalink: /index.html
+---
