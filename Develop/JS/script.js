@@ -45,8 +45,36 @@ $(document).ready(function() {
 
   $("#12.userInput ").val(localStorage.getItem("7 PM"));
 
-  var hour = moment().hours()
+  var hour = moment().hours();
 
-  console.log(hour) //to extract the number from id and compare it against current hour within a for loop; if statements(use this keyword to grab ids) add or remove classes; use of this keyword in for loop
+ // var timeId = $("tr").attr("id")
+
+
+  // var numberCompare = parseInt(element.attr("id").substring(timeFrame));
+
+  // console.log(hour) //to extract the number from id and compare it against current hour within a for loop; if statements(use this keyword to grab ids) add or remove classes; use of this keyword in for loop
+
+  for (var i = 7; i < 21; i++) {
+
+    if (hour < timeId) {
+
+      $("tr").addClass(".past");
+
+      $("tr").removeClass(".present");
+
+    } else if (hour = timeId) {
+
+      $("tr").addClass(".present");
+
+      $("tr").removeClass(".future");
+
+    } else if (hour > timeId) {
+
+      $("tr").addClass(".future");
+
+    }
+
+  }
+  
 
 })
