@@ -4,11 +4,11 @@
 Aside from practicing more JS coding skills and and jQuery, this schedule was created using table rows.  The JS allows the user to target text added into each hour's row and then save it to local storage.  Should the person reload the page, the information will be pulled from local storage and placed back on the page.  In addition, each hour's row is color-coded to display which hours have past, which hour is the present, and the future hours.  The colors respectively are gray (past), red (present), and green (future).
 
 ## Installation
-No installation needed. It can be accessed at ___________________________________.
+No installation needed. It can be accessed at https://bburleigh.github.io/Daily-Planner-HW5/.
 
 This screenshot serves as an example of what the daily planner looks like.
 
-Screenshot (7).png
+![Screenshot (7)](https://user-images.githubusercontent.com/109905208/191537969-338b155c-4262-41ee-938f-7395482da5c2.png)
 
 ## Usage
 In theory, if I was someone who needed a basic online hourly planner that went by each day, then I would use this to keep track of what I was doing from 7 AM to 7 PM.
